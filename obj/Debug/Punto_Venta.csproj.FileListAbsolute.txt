@@ -1,0 +1,176 @@
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\WPF-LoginForm\obj\Debug\CustomControls\BindablePasswordBox.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\WPF-LoginForm\obj\Debug\Views\LoginView.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\WPF-LoginForm\obj\Debug\Views\MainView.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\WPF-LoginForm\obj\Debug\App.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\WPF-LoginForm\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\WPF-LoginForm\obj\Debug\WPF-LoginForm_MarkupCompile.cache
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\WPF-LoginForm\obj\Debug\WPF-LoginForm_MarkupCompile.lref
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\WPF-LoginForm\obj\Debug\WPF-LoginForm.exe
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\WPF-LoginForm\obj\Debug\WPF-LoginForm.pdb
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\Login-In-WPF-MVVM-C-Sharp-and-SQL-Server-main\WPF-LoginForm\obj\Debug\Diccionario_Recursos\DiccionarioRecursos.baml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\WPF-LoginForm\obj\Debug\Diccionario_Recursos\DiccionarioRecursos.baml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\WPF-LoginForm\obj\Debug\CustomControls\BindablePasswordBox.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\WPF-LoginForm\obj\Debug\Views\LoginView.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\WPF-LoginForm\obj\Debug\Views\MainView.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\WPF-LoginForm\obj\Debug\App.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\WPF-LoginForm\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\WPF-LoginForm\obj\Debug\WPF-LoginForm_MarkupCompile.cache
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\WPF-LoginForm\obj\Debug\WPF-LoginForm_MarkupCompile.lref
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\LoginView.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\MainView.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\App.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF-LoginForm_MarkupCompile.cache
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF-LoginForm_MarkupCompile.lref
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\WPF-LoginForm.exe.config
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\WPF-LoginForm.exe
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\WPF-LoginForm.pdb
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\WpfAnimatedGif.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\WpfAnimatedGif.pdb
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\WpfAnimatedGif.xml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\LoginView.baml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\MainView.baml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF-LoginForm.g.resources
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF_LoginForm.Properties.Resources.resources
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.csproj.GenerateResource.cache
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.csproj.CoreCompileInputs.cache
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.csproj.CopyComplete
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF-LoginForm.exe
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF-LoginForm.pdb
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Clients.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Clients.baml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Providers.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Providers.baml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Inv_Record.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Inv_Record.baml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\CustomControls\PassControl.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\CustomControls\PassControl.baml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.csproj.AssemblyReference.cache
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Products.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Products.baml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\PuntoVenta.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\PuntoVenta.baml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Setting.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Setting.baml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\LisClientes.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\LisClientes.baml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Credits.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Credits.baml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\TotalSales.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\TotalSales.baml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\EntityFramework.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\EntityFramework.xml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\WPF-LoginForm.exe.manifest
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\WPF-LoginForm.application
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF-LoginForm.exe.manifest
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF-LoginForm.application
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Gastos.g.cs
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Gastos.baml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.csproj.SuggestedBindingRedirects.cache
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\MySql.Data.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Google.Protobuf.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\ZstdNet.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\System.Memory.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\System.Buffers.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\MySql.Data.xml
+C:\Users\Mauricio Pelaez\Desktop\Semestre VI\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF-LoginForm.exe.config
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\WPF-LoginForm.exe.config
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\WPF-LoginForm.exe.manifest
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\WPF-LoginForm.application
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\WPF-LoginForm.exe
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\WPF-LoginForm.pdb
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\MySql.Data.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Google.Protobuf.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\ZstdNet.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\BouncyCastle.Crypto.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\System.Memory.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\System.Buffers.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\K4os.Compression.LZ4.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\K4os.Hash.xxHash.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\System.Numerics.Vectors.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\MySql.Data.xml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.csproj.AssemblyReference.cache
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.csproj.SuggestedBindingRedirects.cache
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Clients.g.cs
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Credits.g.cs
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Gastos.g.cs
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Inv_Record.g.cs
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\LisClientes.g.cs
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\LoginView.g.cs
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\MainView.g.cs
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Products.g.cs
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Providers.g.cs
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\PuntoVenta.g.cs
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Setting.g.cs
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\TotalSales.g.cs
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\App.g.cs
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF-LoginForm_MarkupCompile.cache
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF-LoginForm_MarkupCompile.lref
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Clients.baml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Credits.baml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Gastos.baml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Inv_Record.baml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\LisClientes.baml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\LoginView.baml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\MainView.baml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Products.baml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Providers.baml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\PuntoVenta.baml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Setting.baml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\TotalSales.baml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF-LoginForm.g.resources
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF_LoginForm.Properties.Resources.resources
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.csproj.GenerateResource.cache
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.csproj.CoreCompileInputs.cache
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF-LoginForm.exe.manifest
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF-LoginForm.application
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.csproj.CopyComplete
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF-LoginForm.exe
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\WPF-LoginForm.pdb
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Camara.g.cs
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Camara.baml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Window1.g.cs
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\obj\Debug\Views\Window1.baml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\System.Collections.Immutable.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Uno.Diagnostics.Eventing.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Uno.Foundation.Logging.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Xamarin.Forms.Core.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\System.Buffers.xml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\System.Collections.Immutable.xml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\System.Memory.xml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\System.Numerics.Vectors.xml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Uno.Diagnostics.Eventing.pdb
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Uno.Foundation.Logging.pdb
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Xamarin.Forms.Core.pdb
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Xamarin.Forms.Core.xml
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\Documentos\ING. SISTEMAS (UT)\6 Sexto semestre (2022-A)\Mineria de datos\Punto_Venta\Punto_Venta\Punto_Venta\bin\Debug\Xamarin.Forms.Xaml.xml

@@ -1,0 +1,9 @@
+﻿<Application x:Class="Punto_Venta.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Punto_Venta"
+             Startup="ApplicationStart">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

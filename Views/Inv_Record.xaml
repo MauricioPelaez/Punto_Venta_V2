@@ -1,0 +1,1024 @@
+﻿<Window x:Class="Punto_Venta.Views.Inv_Record"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Punto_Venta.Views"
+        mc:Ignorable="d"
+        Title="Inv_Record" Height="550" Width="800"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True">
+    
+    <Border CornerRadius="15"
+            BorderThickness="3">
+
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#462AD8" Offset="0"/>
+                <GradientStop Color="#DA34AE" Offset="0.75"/>
+                <GradientStop Color="#8A16C1" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                <GradientStop Color="#060531" Offset="2"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Image Margin="10,2,0,0" Height="30" Source="/images/Inventory.png" 
+                   Grid.Row="0" HorizontalAlignment="Left"/>
+            <TextBlock Text="INVENTARIO"
+                       Margin="45,12,0,0"
+                       Height="30" Width="250"
+                       FontSize="18" FontWeight="DemiBold"
+                       Foreground="LightGray"
+                       FontFamily="Montserrat"
+                       HorizontalAlignment="Left"/>
+
+            <StackPanel Grid.Row="1" Margin="0,10,0,0"
+                        VerticalAlignment="Top" HorizontalAlignment="Center">
+
+                <TextBlock Name="txtFecha" Width="80" Height="25"
+                                       FontSize="14" FontWeight="DemiBold"
+                                       Foreground="#E2BEFE"/>
+
+            </StackPanel>
+
+            <Button x:Name="btnVolver"                          
+                    BorderThickness="0"
+                    Content="VOLVER"
+                    Foreground="White"
+                    FontSize="12"
+                    FontFamily="Montserrat"
+                    Cursor="Hand"
+                    FontWeight="DemiBold"
+                    Grid.Row="0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Margin="0,0,7,0"
+                    Click="Volver">
+
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#DA34AE"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FF8BE0"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="80" Height="30"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <TabControl  Grid.Row="1" Margin="10" Background="LightGray">
+                <TabItem Header="PRODUCTO" Background="#C0D0E1" Height="25"
+                         FontWeight="DemiBold" Foreground="#060531"
+                         FontSize="12" FontFamily="Montserrat">
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="35"/>
+                            <RowDefinition Height="35"/>
+                            <RowDefinition Height="35"/>
+                            <RowDefinition Height="35"/>
+                            <RowDefinition Height="35"/>
+                            <RowDefinition Height="35"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="300"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Row="0" Grid.ColumnSpan="3"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center">
+                            <TextBlock FontSize="20" FontWeight="DemiBold" FontFamily="Montserrat"
+                                       Foreground="#141A49" Text="REGISTRO DE PRODUCTOS"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal"
+                                    VerticalAlignment="Center" HorizontalAlignment="Left"
+                                    Margin="30,3,0,3">
+                            <Label FontSize="11" FontWeight="DemiBold"
+                                   Height="23" Foreground="#060531" Width="85">
+                                CÓDIGO:
+                            </Label>
+
+                            <TextBox Name="txtCodigo" Width="180"
+                                     Height="23" VerticalContentAlignment="Center"
+                                     CharacterCasing="Upper" FontSize="12"
+                                     VerticalAlignment="Center"
+                                     BorderBrush="#095199" IsEnabled="False"
+                                     KeyDown="txtCodigo_KeyDown"
+                                     PreviewTextInput="SoloNumeros" TextChanged="txtCodigo_TextChanged">
+                            </TextBox>
+                        </StackPanel>
+
+                        <TextBlock FontSize="12" FontWeight="Bold" FontFamily="Montserrat" Height="23"
+                                   Foreground="#5E022C" Text="1" Grid.Column="1" Grid.Row="1"
+                                   HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,5,0"/>
+
+                        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal"
+                                    VerticalAlignment="Center" HorizontalAlignment="Left"
+                                    Margin="30,5,0,5">
+                            <Label FontSize="11" FontWeight="DemiBold"
+                                   Height="23" Foreground="#060531" Width="85">
+                                DESCRIPCIÓN:
+                            </Label>
+
+                            <TextBox Name="txtDescripcion" Width="480"
+                                     Height="23" VerticalContentAlignment="Center"
+                                     CharacterCasing="Upper" FontSize="12"
+                                     VerticalAlignment="Center"
+                                     BorderBrush="#095199" IsEnabled="False"
+                                     KeyDown="txtDescripcion_KeyDown"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal"
+                                    VerticalAlignment="Center" HorizontalAlignment="Left"
+                                    Margin="30,5,0,5">
+                            <Label FontSize="11" FontWeight="DemiBold"
+                                   Height="23" Foreground="#060531" Width="85">
+                                PROVEEDOR:
+                            </Label>
+
+                            <ComboBox Name="comboProveedor" Width="180" FontSize="11"
+                                      Height="23" VerticalAlignment="Center"
+                                      BorderBrush="#095199" IsEnabled="False" 
+                                      KeyDown="comboProveedor_KeyDown"
+                                      VerticalContentAlignment="Center" Foreground="#060531">
+                                <ComboBoxItem Content="SELECCIONE... " IsSelected="True" FontSize="12"/>
+                                <ComboBoxItem Content="PROVEEDOR 1" FontSize="12"/>
+                                <ComboBoxItem Content="PROVEEDOR 2" FontSize="12"/>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal"
+                                    VerticalAlignment="Center" HorizontalAlignment="Left"
+                                    Margin="30,5,0,5">
+                            <Label FontSize="11" FontWeight="DemiBold"
+                                   Height="23" Foreground="#060531" Width="85">
+                                BODEGA:
+                            </Label>
+
+                            <ComboBox Name="comboBodega" Width="180" FontSize="11"
+                                      Height="23" VerticalAlignment="Center"
+                                      BorderBrush="#095199" IsEnabled="False" 
+                                      KeyDown="comboBodega_KeyDown"
+                                      VerticalContentAlignment="Center" Foreground="#060531">
+                                <ComboBoxItem Content="SELECCIONE... " IsSelected="True" FontSize="12"/>
+                                <ComboBoxItem Content="BODEGA 1" FontSize="12"/>
+                                <ComboBoxItem Content="BODEGA 2" FontSize="12"/>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal"
+                                    VerticalAlignment="Center" HorizontalAlignment="Left"
+                                    Margin="30,5,0,5">
+                            <Label FontSize="11" FontWeight="DemiBold"
+                                   Height="23" Foreground="#060531" Width="85">
+                                CANTIDAD:
+                            </Label>
+
+                            <TextBox Name="txtCantidad" Width="180" Text="0"
+                                     Height="23" VerticalContentAlignment="Center"
+                                     CharacterCasing="Upper" FontSize="12"
+                                     VerticalAlignment="Center"
+                                     BorderBrush="#095199" IsEnabled="False"
+                                     KeyDown="txtCantidad_KeyDown"
+                                     PreviewTextInput="SoloNumeros"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal"
+                                    VerticalAlignment="Center" HorizontalAlignment="Left"
+                                    Margin="30,5,0,5">
+                            <Label FontSize="11" FontWeight="DemiBold"
+                                   Height="23" Foreground="#060531" Width="85">
+                                STOCK:
+                            </Label>
+
+                            <TextBox Name="txtStock" Width="180"
+                                     Height="23" VerticalContentAlignment="Center"
+                                     CharacterCasing="Upper" FontSize="12" FontWeight="Bold"
+                                     VerticalAlignment="Center" Text="0" Foreground="#4E0023"
+                                     BorderBrush="#095199" IsEnabled="False"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="5" Grid.Column="0" Orientation="Horizontal"
+                                    VerticalAlignment="Center" HorizontalAlignment="Left"
+                                    Margin="30,5,0,5">
+                            <Label FontSize="11" FontWeight="DemiBold"
+                                   Height="23" Foreground="#060531" Width="85">
+                                VAL. COMPRA:
+                            </Label>
+
+                            <TextBox Name="txtValCompra" Width="180" Text="0"
+                                     Height="23" VerticalContentAlignment="Center"
+                                     CharacterCasing="Upper" FontSize="12"
+                                     VerticalAlignment="Center" KeyDown="txtValCompra_KeyDown"
+                                     BorderBrush="#095199" IsEnabled="False"
+                                     PreviewTextInput="SoloNumeros"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal"
+                                    VerticalAlignment="Center" HorizontalAlignment="Left"
+                                    Margin="30,5,0,5">
+                            <Label FontSize="11" FontWeight="DemiBold"
+                                   Height="23" Foreground="#060531" Width="85">
+                                VAL. VENTA:
+                            </Label>
+
+                            <TextBox Name="txtValVenta" Width="180" Text="0"
+                                     Height="23" VerticalContentAlignment="Center"
+                                     CharacterCasing="Upper" FontSize="12"
+                                     VerticalAlignment="Center" KeyDown="txtValVenta_KeyDown"
+                                     BorderBrush="#095199" IsEnabled="False"
+                                     Keyboard.KeyUp="txtValVenta_KeyUp"
+                                     PreviewTextInput="SoloNumeros"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="6" Grid.Column="0" Orientation="Horizontal"
+                                    VerticalAlignment="Center" HorizontalAlignment="Left"
+                                    Margin="30,5,0,5">
+                            <Label FontSize="11" FontWeight="DemiBold"
+                                   Height="23" Foreground="#060531" Width="85">
+                                DESCUENTO:
+                            </Label>
+
+                            <ComboBox Name="comboDescuento" Width="180" FontSize="12"
+                                      Height="23" VerticalAlignment="Center"
+                                      BorderBrush="#095199" IsEnabled="False" 
+                                      VerticalContentAlignment="Center" Foreground="#060531">
+                                <ComboBoxItem Content="SI" IsSelected="True" FontSize="12"/>
+                                <ComboBoxItem Content="NO" FontSize="12"/>
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="6" Grid.Column="1" Orientation="Horizontal"
+                                    VerticalAlignment="Center" HorizontalAlignment="Left"
+                                    Margin="30,5,0,5">
+                            <Label FontSize="11" FontWeight="DemiBold"
+                                   Height="23" Foreground="#060531" Width="85">
+                                GANANCIA:
+                            </Label>
+                            <TextBox Name="txtGanacia" Width="180" Text="0"
+                                     Height="23" VerticalContentAlignment="Center" FontWeight="Bold"
+                                     CharacterCasing="Upper" FontSize="12" Foreground="Gold"
+                                     VerticalAlignment="Center" Background="#040226"
+                                     BorderBrush="#4C0045" IsEnabled="False"/>
+                        </StackPanel>
+
+                        <Button x:Name="btnNuevo"                          
+                                BorderThickness="0"
+                                Content="NUEVO"
+                                FontSize="11"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Row="2" Grid.Column="2"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Click="btnNuevo_Click">
+
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="#05617C"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="FontWeight" Value="DemiBold"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#7DE1FF" />
+                                            <Setter Property="Foreground" Value="#060531"/>
+                                            <Setter Property="FontWeight" Value="DemiBold"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="100" Height="28"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                        <Button x:Name="btnGuardar"                          
+                                Content="GUARDAR"
+                                FontSize="11"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Row="3" Grid.Column="2"
+                                HorizontalAlignment="Center"
+                                Click="btnGuardar_Click"
+                                VerticalAlignment="Center" IsEnabled="False">
+
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="#067F58"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="FontWeight" Value="DemiBold"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#0EFFB2" />
+                                            <Setter Property="Foreground" Value="#060531"/>
+                                            <Setter Property="FontWeight" Value="DemiBold"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="100" Height="28"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                        <Button x:Name="btnActualizar"                          
+                                Content="ACTUALIZAR"
+                                FontSize="11"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Row="4" Grid.Column="2"
+                                HorizontalAlignment="Center"
+                                Click="btnActualizar_Click"
+                                VerticalAlignment="Center" IsEnabled="False">
+
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="#7705DC"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="FontWeight" Value="DemiBold"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#CB98F7" />
+                                            <Setter Property="Foreground" Value="#060531"/>
+                                            <Setter Property="FontWeight" Value="DemiBold"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="100" Height="28"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                        <Button x:Name="btnEliminar"                          
+                                Content="ELIMINAR"
+                                FontSize="11"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Row="5" Grid.Column="2"
+                                HorizontalAlignment="Center"
+                                Click="btnEliminar_Click"
+                                VerticalAlignment="Center" IsEnabled="False">
+
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="#C31E1E"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="FontWeight" Value="DemiBold"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#EF9090" />
+                                            <Setter Property="Foreground" Value="#060531"/>
+                                            <Setter Property="FontWeight" Value="DemiBold"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="100" Height="28"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                        <Button x:Name="btnCancelar"                          
+                                Content="CANCELAR"
+                                FontSize="11"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Row="6" Grid.Column="2"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Click="btnCancelar_Click">
+
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="#7B7B7B"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="FontWeight" Value="DemiBold"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#C4C1C1" />
+                                            <Setter Property="Foreground" Value="#060531"/>
+                                            <Setter Property="FontWeight" Value="DemiBold"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="100" Height="28"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                        <StackPanel Grid.Row="8" Grid.ColumnSpan="4"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center" Margin="29,13">
+                            <Border Margin="5,7,5,0" 
+                                    BorderThickness="3" 
+                                    CornerRadius="2" 
+                                    Height="25"
+                                    Width="700"
+                                    VerticalAlignment="Center"
+                                    Background="#EBDBF8">
+
+                                <Border.BorderBrush>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Color="#462AD8" Offset="0"/>
+                                        <GradientStop Color="#DA34AE" Offset="0.75"/>
+                                        <GradientStop Color="#8A16C1" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Border.BorderBrush>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="CÓDIGO" Width="50" Foreground="#141A49" VerticalAlignment="Center" Margin="7,0,0,0"/>
+                                    <TextBlock Text="DESCRIPCIÓN" Width="110" Foreground="#141A49" Margin="10,0,10,0" VerticalAlignment="Center"/>
+                                    <TextBlock Text="PROVEEDOR" Width="120" Foreground="#141A49" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                                    <TextBlock Text="STOCK" Width="40" Foreground="#141A49" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                                    <TextBlock Text="DTO" Width="30" Foreground="#141A49" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                                    <TextBlock Text="VAL. COMPRA" Width="90" Foreground="#141A49" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                                    <TextBlock Text="VAL. VENTA" Width="90" Foreground="#141A49" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                                    <TextBlock Text="GANANCIAS" Width="90" Foreground="#141A49" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </Border>
+
+
+                            <Border Margin="5,0,5,0" 
+                                    BorderThickness="3" 
+                                    CornerRadius="2" 
+                                    Height="130"
+                                    Width="700"
+                                    VerticalAlignment="Center">
+                                <Border.BorderBrush>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Color="#462AD8" Offset="0"/>
+                                        <GradientStop Color="#DA34AE" Offset="0.75"/>
+                                        <GradientStop Color="#8A16C1" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Border.BorderBrush>
+
+                                <ListBox Background="#EBE7F0"
+                                         MouseDoubleClick="ListBox_MouseDoubleClick">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="CÓDIGO" Width="50" Foreground="#141A49" VerticalAlignment="Center" Margin="7,0,0,0"/>
+                                                <TextBlock Text="DESCRIPCIÓN" Width="110" Foreground="#141A49" Margin="10,0,10,0" VerticalAlignment="Center"/>
+                                                <TextBlock Text="PROVEEDOR" Width="120" Foreground="#141A49" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                                                <TextBlock Text="STOCK" Width="40" Foreground="#141A49" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                                                <TextBlock Text="DTO" Width="30" Foreground="#141A49" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                                                <TextBlock Text="VAL. COMPRA" Width="90" Foreground="#141A49" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                                                <TextBlock Text="VAL. VENTA" Width="90" Foreground="#141A49" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                                                <TextBlock Text="GANANCIAS" Width="90" Foreground="#141A49" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                            </Border>
+                        </StackPanel>
+
+                    </Grid>
+
+                </TabItem>
+
+
+                <TabItem Header="BODEGA" Background="#C0D0E1" Height="25"
+                             FontWeight="DemiBold" Foreground="#060531"
+                             FontSize="13" FontFamily="Montserrat">
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="510"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.RowSpan="2" Grid.ColumnSpan="2"
+                                    Orientation="Horizontal"                          
+                                    HorizontalAlignment="Center"                          
+                                    VerticalAlignment="Center">
+                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center"
+                                       FontSize="22" FontWeight="DemiBold" FontFamily="Montserrat"
+                                       Foreground="#141A49" Text="REGISTRO DE BODEGA"/>
+                        </StackPanel >
+
+
+                        <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal"
+                                    VerticalAlignment="Center" HorizontalAlignment="Left"
+                                    Margin="30,5,0,5">
+                            <Label FontSize="12" FontWeight="DemiBold"
+                                   Height="30" Foreground="#060531" Width="120">
+                                NOMBRE BODEGA:
+                            </Label>
+
+                            <TextBox Name="txtNomBodega" Width="350"
+                                     Height="30" VerticalContentAlignment="Center"
+                                     CharacterCasing="Upper"
+                                     VerticalAlignment="Center"
+                                     BorderBrush="#095199" IsEnabled="False"
+                                     KeyDown="txtNomBodega_KeyDown"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="3" Orientation="Horizontal"
+                                    VerticalAlignment="Center" HorizontalAlignment="Left"
+                                    Margin="30,5,0,5">
+                            <Label FontSize="12" FontWeight="DemiBold"
+                                   Height="30" Foreground="#060531" Width="120">
+                                DESCRIPCIÓN:
+                            </Label>
+
+                            <TextBox Name="txtDescBodega" Width="350"
+                                     Height="30" VerticalContentAlignment="Center"
+                                     CharacterCasing="Upper"
+                                     VerticalAlignment="Center"
+                                     BorderBrush="#095199" IsEnabled="False"/>
+                        </StackPanel>
+
+                        <Button x:Name="btnNuevaBod"                          
+                                BorderThickness="0"
+                                Content="NUEVO"
+                                FontSize="12"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Row="1" Grid.Column="1"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Click="btnNuevaBod_Click">
+
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="#05617C"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="FontWeight" Value="DemiBold"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#7DE1FF" />
+                                            <Setter Property="Foreground" Value="#060531"/>
+                                            <Setter Property="FontWeight" Value="DemiBold"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="150" Height="30"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                        <Button x:Name="btnGuardarBod"                          
+                                Content="GUARDAR"
+                                FontSize="12"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Row="2" Grid.Column="1"
+                                HorizontalAlignment="Center"
+                                Click="btnGuardarBod_Click"
+                                VerticalAlignment="Center" IsEnabled="False">
+
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="#067F58"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="FontWeight" Value="DemiBold"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#0EFFB2" />
+                                            <Setter Property="Foreground" Value="#060531"/>
+                                            <Setter Property="FontWeight" Value="DemiBold"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="150" Height="30"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                        <Button x:Name="btnActualizarBod"                          
+                                Content="ACTUALIZAR"
+                                FontSize="12"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Row="3" Grid.Column="1"
+                                HorizontalAlignment="Center"
+                                Click="btnActualizarBod_Click"
+                                VerticalAlignment="Center" IsEnabled="False">
+
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="#7705DC"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="FontWeight" Value="DemiBold"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#CB98F7" />
+                                            <Setter Property="Foreground" Value="#060531"/>
+                                            <Setter Property="FontWeight" Value="DemiBold"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="150" Height="30"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                        <Button x:Name="btnEliminarBod"                          
+                                Content="ELIMINAR"
+                                FontSize="12"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Row="4" Grid.Column="1"
+                                HorizontalAlignment="Center"
+                                Click="btnEliminarBod_Click"
+                                VerticalAlignment="Center" IsEnabled="False">
+
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="#C31E1E"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="FontWeight" Value="DemiBold"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#EF9090" />
+                                            <Setter Property="Foreground" Value="#060531"/>
+                                            <Setter Property="FontWeight" Value="DemiBold"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="150" Height="30"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                        <Button x:Name="btnCancelarBod"                          
+                                Content="CANCELAR"
+                                FontSize="12"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Row="5" Grid.Column="1"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Click="btnCancelarBod_Click">
+
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="#7B7B7B"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="FontWeight" Value="DemiBold"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#C4C1C1" />
+                                            <Setter Property="Foreground" Value="#060531"/>
+                                            <Setter Property="FontWeight" Value="DemiBold"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="150" Height="30"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                        <StackPanel Grid.Row="6" Grid.ColumnSpan="4"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center" Margin="29,13">
+                            <Border Margin="5,7,5,0" 
+                                    BorderThickness="3" 
+                                    CornerRadius="2" 
+                                    Height="25"
+                                    Width="700"
+                                    VerticalAlignment="Center"
+                                    Background="#EBDBF8">
+
+                                <Border.BorderBrush>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Color="#462AD8" Offset="0"/>
+                                        <GradientStop Color="#DA34AE" Offset="0.75"/>
+                                        <GradientStop Color="#8A16C1" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Border.BorderBrush>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="NOMBRE DE LA BODEGA" Width="330" Foreground="#141A49" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                                    <TextBlock Text="DESCRIPCIÓN" Width="330" Foreground="#141A49" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                                </StackPanel>
+                            </Border>
+
+
+                            <Border Margin="5,0,5,0" 
+                                    BorderThickness="3" 
+                                    CornerRadius="2" 
+                                    Height="130"
+                                    Width="700"
+                                    VerticalAlignment="Center">
+                                <Border.BorderBrush>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Color="#462AD8" Offset="0"/>
+                                        <GradientStop Color="#DA34AE" Offset="0.75"/>
+                                        <GradientStop Color="#8A16C1" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </Border.BorderBrush>
+
+                                <ListBox Background="#EBE7F0"
+                                         MouseDoubleClick="lista_MouseDoubleClick">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="NIT/CEDULA" Width="110" Foreground="#141A49" Margin="7,0,0,0" Name="cedula"/>
+                                                <TextBlock Text="NOMBRE" Width="150" Foreground="#141A49" Margin="10,0,10,0"/>
+                                                <TextBlock Text="APELLIDO" Width="150" Foreground="#141A49" Margin="10,0,10,0"/>
+                                                <TextBlock Text="DIRECCIÓN" Width="125" Foreground="#141A49" Margin="0,0,10,0"/>
+                                                <TextBlock Text="TELEFONO" Width="100" Foreground="#141A49"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                            </Border>
+                        </StackPanel>
+                    </Grid>
+
+                </TabItem>
+
+                <TabItem Header="CONSULTA" Background="#C0D0E1" Height="25"
+                             FontWeight="DemiBold" Foreground="#060531"
+                             FontSize="13" FontFamily="Montserrat">
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60" />
+                            <RowDefinition Height="30" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <StackPanel Grid.Row="0"
+                                    Orientation="Horizontal"                          
+                                    HorizontalAlignment="Center"                          
+                                    VerticalAlignment="Center">
+                            <TextBlock Grid.Row="0" Grid.ColumnSpan="2"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center"
+                                       FontSize="22" FontWeight="DemiBold" FontFamily="Montserrat"
+                                       Foreground="#141A49" Text="LISTA DE PRODUCTOS"/>
+                        </StackPanel >
+
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Bottom">
+                            <Label FontSize="15" FontWeight="DemiBold" FontFamily="Montserrat"
+                                   Foreground="#141A49" Margin="30,0,0,0" Height="25">BUSCAR:
+                            </Label>
+                            <TextBox Name="txtBuscarProd" Height="25" Width="300" BorderBrush="#095199"
+                                     VerticalContentAlignment="Center" CharacterCasing="Upper"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                            <DataGrid VerticalContentAlignment="Center" Height="300" Width="700"
+                              IsReadOnly="True" AutoGenerateColumns="False"
+                              RowHeight="25" Foreground="#141A49"
+                              HorizontalGridLinesBrush="#7438C7"
+                              VerticalGridLinesBrush="#7438C7"
+                              BorderBrush="#4B02B0">
+
+                                <DataGrid.Columns>
+                                    <DataGridTemplateColumn>
+                                        <DataGridTemplateColumn.Header>
+                                            <TextBlock Text="ID" FontWeight="DemiBold" HorizontalAlignment="Center"/>
+                                        </DataGridTemplateColumn.Header>
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="id" Margin="9,0,0,0"/>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                        <DataGridTemplateColumn.CellEditingTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="idactualizado"/>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellEditingTemplate>
+                                    </DataGridTemplateColumn>
+
+                                    <DataGridTemplateColumn Width="90">
+                                        <DataGridTemplateColumn.Header>
+                                            <TextBlock Text="CÓDIGO" HorizontalAlignment="Center" Margin="15,0,0,0" FontWeight="DemiBold"/>
+                                        </DataGridTemplateColumn.Header>
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="codigo" Margin="2,0,2,0"/>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                        <DataGridTemplateColumn.CellEditingTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="codigoactualizado"/>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellEditingTemplate>
+                                    </DataGridTemplateColumn>
+
+                                    <DataGridTemplateColumn Width="160">
+                                        <DataGridTemplateColumn.Header>
+                                            <TextBlock Text="DESCRIPCIÓN"  Margin="40,0,0,0" FontWeight="DemiBold"/>
+                                        </DataGridTemplateColumn.Header>
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="descripcion" Margin="2,0,2,0"/>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                        <DataGridTemplateColumn.CellEditingTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="descripcionacutualizada"/>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellEditingTemplate>
+                                    </DataGridTemplateColumn>
+
+
+                                    <DataGridTemplateColumn Width="135">
+                                        <DataGridTemplateColumn.Header>
+                                            <TextBlock Text="PROVEEDOR" Margin="25,0,0,0" FontWeight="DemiBold"/>
+                                        </DataGridTemplateColumn.Header>
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="proveedor" Margin="2,0,2,0"/>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                        <DataGridTemplateColumn.CellEditingTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="proveedor actualizado"/>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellEditingTemplate>
+                                    </DataGridTemplateColumn>
+
+                                    <DataGridTemplateColumn Width="130">
+                                        <DataGridTemplateColumn.Header>
+                                            <TextBlock Text="BODEGA" Margin="35,0,0,0" FontWeight="DemiBold"/>
+                                        </DataGridTemplateColumn.Header>
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="bodega" Margin="5,0,2,0"/>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                        <DataGridTemplateColumn.CellEditingTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="bodega"/>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellEditingTemplate>
+                                    </DataGridTemplateColumn>
+
+                                    <DataGridTemplateColumn Width="55">
+                                        <DataGridTemplateColumn.Header>
+                                            <TextBlock Text="STOCK" FontWeight="DemiBold" Margin="2,0,0,0"/>
+                                        </DataGridTemplateColumn.Header>
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="stock" Margin="5,0,2,0"/>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                        <DataGridTemplateColumn.CellEditingTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="stock actualizado"/>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellEditingTemplate>
+                                    </DataGridTemplateColumn>
+
+                                    <DataGridTemplateColumn Width="110">
+                                        <DataGridTemplateColumn.Header>
+                                            <TextBlock Text="VALOR" FontWeight="DemiBold" Margin="25,0,0,0"/>
+                                        </DataGridTemplateColumn.Header>
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="valor" Margin="5,0,2,0"/>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                        <DataGridTemplateColumn.CellEditingTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="valor actualizado"/>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellEditingTemplate>
+                                    </DataGridTemplateColumn>
+
+                                </DataGrid.Columns>
+                            </DataGrid>
+
+                        </StackPanel>
+
+                    </Grid>
+
+                </TabItem>
+
+            </TabControl>
+        </Grid>
+    </Border>
+
+</Window>

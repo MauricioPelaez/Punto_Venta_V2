@@ -1,0 +1,618 @@
+﻿<Window x:Class="Punto_Venta.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Punto_Venta.Views"
+        mc:Ignorable="d"
+        Title="Menu Principal" Height="600" Width="900"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True">
+
+    <Border CornerRadius="15">
+
+        <Border.Background>
+            <ImageBrush ImageSource="/Images/PV_Es.png"
+                        Stretch="Uniform"
+                        AlignmentY="Bottom">
+
+            </ImageBrush>
+        </Border.Background>
+
+        <Border CornerRadius="25"
+                Opacity="0.9">
+
+
+            <Border.Background>
+
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#0006BD" Offset="0"/>
+                    <GradientStop Color="#000137" Offset="0.5"/>
+                    <GradientStop Color="#000121" Offset="0.7"/>
+                    <GradientStop Color="#00000F" Offset="1"/>
+
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="90"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="30"/>
+
+                </Grid.RowDefinitions>
+
+                <TextBlock Name="txtHora" Width="90" Height="20"
+                           FontSize="12" FontWeight="DemiBold" FontFamily="Segoe UI"
+                           Foreground="LightGray" HorizontalAlignment="Left"
+                           Margin="365,0,0,0" VerticalAlignment="Center"
+                           Grid.Column="1" Grid.Row="2"
+                           Text="Hora"/>
+
+                <TextBlock Name="txtFecha" Width="180" Height="20"
+                           FontSize="12" FontWeight="DemiBold" FontFamily="Segoe UI"
+                           Foreground="LightGray" HorizontalAlignment="Left"
+                           Margin="180,0,0,0" VerticalAlignment="Center"
+                           Grid.Column="1" Grid.Row="2"
+                           Text="Fecha"/>
+
+                <Button x:Name="btnClose"                          
+                        BorderThickness="0"
+                        Content="r"
+                        Foreground="White"
+                        FontSize="18"
+                        FontFamily="Webdings"
+                        Cursor="Hand"
+                        Grid.Column="1"
+                        Click="Salir"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top"
+                        Margin="0,20,20,0"
+                        FontWeight="SemiBold">
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="red"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="33" Height="30"
+                                CornerRadius="7"
+                                Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button x:Name="btnMinimizar"                          
+                        BorderThickness="0"
+                        Content="0"
+                        Foreground="White"
+                        FontSize="18"
+                        FontFamily="Webdings"
+                        Cursor="Hand"
+                        Grid.Column="1"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top"
+                        Margin="0,20,55,0"
+                        FontWeight="Bold"
+                        Click="btnMinimizar_Click">
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#1F8FFF"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="33" Height="30"
+                                CornerRadius="7"
+                                Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+
+                <Button x:Name="btnMenu"                           
+                            BorderThickness="10"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Montserrat"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Grid.Column="0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="20,0,0,0"
+                            Opacity="0.8"
+                            Click="btnMenu_Click">
+
+                    <WrapPanel HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Margin="1">
+                        <Image Source="/Images/PV_.ico"  />
+                    </WrapPanel>
+
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#00D3F9"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="60" Height="60"
+                                        CornerRadius="30"
+                                        Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+
+                <Canvas Grid.Row="1"
+                        Grid.Column="0"
+                        Margin="1"
+                        Name="Canva_Menu"
+                        Visibility="Visible">
+
+                    <Button x:Name="btnPuntoVenta"                           
+                            BorderThickness="10"
+                            Foreground="#060531"
+                            FontSize="16"
+                            FontFamily="Segoe UI"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Grid.Column="0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="20,0,0,0"
+                            Opacity="1"
+                            Click="btnPuntoVenta_Click"
+                            Canvas.Left="55" Canvas.Top="10">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#CACACA"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#00FFBD"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="200" Height="40"
+                                        CornerRadius="10"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Left"
+                                                      Margin="20,0,0,0"
+                                                      Content="PUNTO DE VENTA"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <Button x:Name="btnConteo_Caja"                           
+                            BorderThickness="10"
+                            Foreground="#060531"
+                            FontSize="16"
+                            FontFamily="Segoe UI"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Grid.Column="0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="20,0,0,0"
+                            Opacity="1"
+                            Canvas.Left="55" Canvas.Top="60">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#CACACA"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#FBC50F"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="200" Height="40"
+                                        CornerRadius="10"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Left"
+                                                      Margin="20,0,0,0"
+                                                      Content="CONTEO DE CAJA"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+
+                    <Button x:Name="btnRegistroInventario"                           
+                            BorderThickness="10"
+                            Foreground="#060531"
+                            FontSize="16"
+                            FontFamily="Segoe UI"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Grid.Column="0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="20,0,0,0"
+                            Opacity="1"
+                            Click="btnRegistroInventario_Click"
+                            Canvas.Left="55" Canvas.Top="110">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#CACACA"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#41C5FF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="200" Height="40"
+                                        CornerRadius="10"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Left"
+                                                      Content="INVENTARIO"
+                                                      Margin="20,0,0,0"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <Button x:Name="btnClientes"                           
+                            BorderThickness="10"
+                            Foreground="#060531"
+                            FontSize="16"
+                            FontFamily="Segoe UI"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Grid.Column="0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="20,0,0,0"
+                            Opacity="1"
+                            Click="btnClientes_Click"
+                            Canvas.Left="55" Canvas.Top="160">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#CACACA"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#41C5FF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="200" Height="40"
+                                        CornerRadius="10"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Left"
+                                                      Content="CLIENTES"
+                                                      Margin="20,0,0,0"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <Button x:Name="btnTotal_Ventas"                           
+                            BorderThickness="10"
+                            Foreground="#060531"
+                            FontSize="16"
+                            FontFamily="Segoe UI"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Grid.Column="0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="20,0,0,0"
+                            Opacity="1"
+                            Click="btnTotalVentas_Click"
+                            Canvas.Left="55" Canvas.Top="210">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#CACACA"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#41C5FF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="200" Height="40"
+                                        CornerRadius="10"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Left"
+                                                      Content="TOTAL VENTAS"
+                                                      Margin="20,0,0,0"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <Button x:Name="btnCreditos"                           
+                            BorderThickness="10"
+                            Foreground="#060531"
+                            FontSize="16"
+                            FontFamily="Segoe UI"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Grid.Column="0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="20,0,0,0"
+                            Opacity="1"
+                            Click="btnCredito_Click"
+                            Canvas.Left="55" Canvas.Top="260">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#CACACA"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#41C5FF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="200" Height="40"
+                                        CornerRadius="10"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Left"
+                                                      Content="CREDITOS"
+                                                      Margin="20,0,0,0"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <Button x:Name="btnProveedores"                           
+                            BorderThickness="10"
+                            Foreground="#060531"
+                            FontSize="16"
+                            FontFamily="Segoe UI"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Grid.Column="0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="20,0,0,0"
+                            Opacity="1"
+                            Click="btnProveedores_Click"
+                            Canvas.Left="55" Canvas.Top="310">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#CACACA"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#41C5FF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="200" Height="40"
+                                        CornerRadius="10"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Left"
+                                                      Content="PROVEEDORES"
+                                                      Margin="20,0,0,0"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <Button x:Name="btnGastos"                           
+                            BorderThickness="10"
+                            Foreground="#060531"
+                            FontSize="16"
+                            FontFamily="Segoe UI"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Grid.Column="0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="20,0,0,0"
+                            Opacity="1"
+                            Click="btnGastos_Click"
+                            Canvas.Left="55" Canvas.Top="360">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#CACACA"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#41C5FF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="200" Height="40"
+                                        CornerRadius="10"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Left"
+                                                      Content="GASTOS"
+                                                      Margin="20,0,0,0"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <Button x:Name="btnConfiguracion"                           
+                            BorderThickness="10"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Montserrat"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Grid.Column="0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="20,0,0,0"
+                            Opacity="0.93"
+                            Click="btnConfiguracion_Click"
+                            Canvas.Left="150"
+                            Canvas.Top="410">
+
+                        <WrapPanel HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   Margin="1">
+                            <Image Source="/Images/Icon_Confi.png"  />
+                        </WrapPanel>
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="Transparent"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#0064FF"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="35" Height="35"
+                                        CornerRadius="15"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+
+                    <Button x:Name="btn_Salir" 
+                            BorderThickness="0"
+                            Content="SALIR"
+                            Foreground="White"
+                            FontSize="13"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"                           
+                            Margin="20,0,0,0"
+                            FontWeight="DemiBold"
+                            Click="Salir"
+                            Opacity="0.93"
+                            Canvas.Left="195" Canvas.Top="410">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="Red"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#9F0000"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="60" Height="30"
+                                        CornerRadius="10"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                </Canvas>
+
+                <TextBlock Name="txtUser_Log" 
+                           Height="20"
+                           Text="USER"
+                           FontSize="14" FontWeight="DemiBold"
+                           FontFamily="Segoe UI"
+                           Foreground="LightGray" HorizontalAlignment="Right"
+                           Margin="0,10,30,0" VerticalAlignment="Top"
+                           Grid.Column="1" Grid.Row="1"/>
+
+                <TextBlock Name="txt_Tipo_User_log"
+                           Text="TIPO USER"
+                           FontSize="14" FontWeight="DemiBold"
+                           FontFamily="Segoe UI"
+                           Foreground="LightGray" HorizontalAlignment="Right"
+                           Margin="0,35,30,0" VerticalAlignment="Top"
+                           Grid.Column="1" Grid.Row="1"/>
+
+
+
+
+
+
+
+            </Grid>
+        </Border>
+    </Border>
+</Window>

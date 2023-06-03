@@ -1,0 +1,240 @@
+﻿<Window x:Class="Punto_Venta.Views.Products"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Punto_Venta.Views"
+        mc:Ignorable="d"
+        Title="Products" Height="600" Width="900"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True">
+
+    <Border CornerRadius="15"
+            BorderThickness="3">
+
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#462AD8" Offset="0"/>
+                <GradientStop Color="#DA34AE" Offset="0.75"/>
+                <GradientStop Color="#8A16C1" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                <GradientStop Color="#060531" Offset="2"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Image Margin="10,2,0,0" Height="30" Source="/images/Ch.ico" 
+                   Grid.Row="0" HorizontalAlignment="Left"/>
+            <TextBlock Text="PRODUCTOS"
+                       Margin="45,12,0,0"
+                       Height="30" Width="250"
+                       FontSize="18" FontWeight="DemiBold"
+                       Foreground="LightGray"
+                       FontFamily="Montserrat"
+                       HorizontalAlignment="Left"/>
+
+            <StackPanel Grid.RowSpan="2" Margin="0,30,0,0"
+                        VerticalAlignment="Top" HorizontalAlignment="Center">
+
+                <TextBlock Name="txtFechaP" Width="80" Height="25"
+                           FontSize="14" FontWeight="DemiBold"
+                           Foreground="#E2BEFE"/>
+            </StackPanel>
+
+            <Button x:Name="btnVolver"                          
+                    BorderThickness="0"
+                    Content="VOLVER"
+                    Foreground="White"
+                    FontSize="12"
+                    FontFamily="Montserrat"
+                    Cursor="Hand"
+                    FontWeight="DemiBold"
+                    Grid.Row="0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Margin="0,0,7,0"
+                    Click="btnVolver_Click">
+
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#DA34AE"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#FF8BE0"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Width="80" Height="30"
+                                CornerRadius="12"
+                                Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center"
+                                              HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <Grid Grid.Row="1" Margin="10" Background="LightGray">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Bottom">
+                    <Label FontSize="15" FontWeight="DemiBold" FontFamily="Montserrat"
+                                   Foreground="#141A49" Margin="30,0,0,0" Height="25">BUSCAR:
+                    </Label>
+                    <TextBox Name="txtBuscarProd" Height="25" Width="300" BorderBrush="#095199"
+                                     VerticalContentAlignment="Center" CharacterCasing="Upper"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                    <DataGrid VerticalContentAlignment="Center" Height="400" Width="750"
+                              IsReadOnly="True" AutoGenerateColumns="False"
+                              RowHeight="25" Foreground="#141A49"
+                              HorizontalGridLinesBrush="#7438C7"
+                              VerticalGridLinesBrush="#7438C7"
+                              BorderBrush="#4B02B0" x:Name="TablaProductos"
+                              >
+                        
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn>
+                                <DataGridTemplateColumn.Header>
+                                    <TextBlock Text="ID" FontWeight="DemiBold" HorizontalAlignment="Center"/>
+                                </DataGridTemplateColumn.Header>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="1" Margin="9,0,0,0"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="idactualizado"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                            </DataGridTemplateColumn>
+
+                            <DataGridTemplateColumn Width="100">
+                                <DataGridTemplateColumn.Header>
+                                    <TextBlock Text="CÓDIGO" HorizontalAlignment="Center" Margin="20,0,0,0" FontWeight="DemiBold"/>
+                                </DataGridTemplateColumn.Header>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="1111111" Margin="2,0,2,0"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="codigoactualizado"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                            </DataGridTemplateColumn>
+
+                            <DataGridTemplateColumn Width="180">
+                                <DataGridTemplateColumn.Header>
+                                    <TextBlock Text="DESCRIPCIÓN"  Margin="50,0,0,0" FontWeight="DemiBold"/>
+                                </DataGridTemplateColumn.Header>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="PRODUCTOS BUENISIMO" Margin="2,0,2,0"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="descripcionacutualizada"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                            </DataGridTemplateColumn>
+
+
+                            <DataGridTemplateColumn Width="145">
+                                <DataGridTemplateColumn.Header>
+                                    <TextBlock Text="PROVEEDOR" Margin="30,0,0,0" FontWeight="DemiBold"/>
+                                </DataGridTemplateColumn.Header>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="PROVEEDOR 1" Margin="2,0,2,0"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="proveedor actualizado"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                            </DataGridTemplateColumn>
+
+                            <DataGridTemplateColumn Width="145">
+                                <DataGridTemplateColumn.Header>
+                                    <TextBlock Text="BODEGA" Margin="40,0,0,0" FontWeight="DemiBold"/>
+                                </DataGridTemplateColumn.Header>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="BODEGA 3" Margin="5,0,2,0"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="bodega"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                            </DataGridTemplateColumn>
+
+                            <DataGridTemplateColumn Width="50">
+                                <DataGridTemplateColumn.Header>
+                                    <TextBlock Text="STOCK" FontWeight="DemiBold" Margin="2,0,0,0"/>
+                                </DataGridTemplateColumn.Header>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="3" Margin="5,0,2,0"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="stock actualizado"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                            </DataGridTemplateColumn>
+
+                            <DataGridTemplateColumn Width="110">
+                                <DataGridTemplateColumn.Header>
+                                    <TextBlock Text="VALOR" FontWeight="DemiBold" Margin="25,0,0,0"/>
+                                </DataGridTemplateColumn.Header>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="25000" Margin="5,0,2,0"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="valor actualizado"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                            </DataGridTemplateColumn>
+
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                </StackPanel>
+
+            </Grid>
+            
+        </Grid>
+    </Border>
+</Window>
